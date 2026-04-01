@@ -1,0 +1,48 @@
+body {
+  font-family: Arial;
+  margin: 10px;
+  background: #f5f5f5;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+#search {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+}
+
+.card {
+  background: white;
+  padding: 12px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+img {
+  width: 40px;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    padding: 10px;
+  }
+
+  img {
+    width: 35px;
+  }
+}

@@ -9,13 +9,29 @@
 
   <h1>📈 TradeNest</h1>
 
-  <!-- Search -->
-  <input type="text" id="search" placeholder="Search crypto...">
+  <!-- Controls -->
+  <div class="controls">
+    <input type="text" id="search" placeholder="Search crypto...">
+
+    <select id="filter">
+      <option value="all">All</option>
+      <option value="top">Top 10</option>
+    </select>
+
+    <select id="sort">
+      <option value="default">Sort</option>
+      <option value="priceHigh">Price High → Low</option>
+      <option value="priceLow">Price Low → High</option>
+      <option value="name">Name A-Z</option>
+    </select>
+
+    <button id="themeBtn">🌙</button>
+  </div>
 
   <!-- Loading -->
   <p id="loading">Loading data...</p>
 
-  <!-- Data Container -->
+  <!-- Data -->
   <div id="container"></div>
 
   <script src="script.js"></script>
